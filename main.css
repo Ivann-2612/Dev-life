@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body  {
+	background-color: #110B11;
+	font-family: sans-serif;
+	transition: all 0.6s ease;
+	overflow-x: hidden;
+	color: #fdfffc;
+	font-family: Georgia, serif;
+	font-weight: 700;
+
+}
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+   /*clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
+  /* background:url('img-50.jpg');*/
+  background: linear-gradient (35deg,#CCFFFF,#FFCCCC,rgb(204,204,255));
+  background:url('img/img-22.jpg');
+  background-attachment: fixed;
+  clip-path: polygon(100% 0, 100% 25%, 0 17%, 100% 27%, 100% 100%, 0 100%, 0 75%, 0 0);
+  position: relative;
+  animation-name: buttonbg;
+  animation-duration: 4.5s;
+
+}
+@keyframes buttonbg {
+  0%   {left:-1550px;}
+  100% {left:0;}
+}
+  }
+.bg-active {
+	background-color: white;
+}
+h1 {
+	padding-bottom: 40px;
+	font-size:50px !important;
+	color:#08BE2D;
+}
+button {
+	width:150px;
+	background-color:#050308;
+	margin-right: 30px;
+	border-radius: 50px;
+	text-align:center;
+	margin-bottom:10px;
+	font-family: Georgia, serif; 
+}
+/*
+button:hover {
+	width:150px;
+	background-color:gray;
+	margin-right: 30px;
+	border-radius: 50px;
+	text-align:center;
+	padding:0;  
+	margin:0;
+}*/
+.button1 {
+  position: relative;
+  animation-name: buttonOne;
+  animation-duration: 4s;
+
+}
+@keyframes buttonOne {
+  0%   {left:-700px;}
+  100% {left:0;}
+}
+.button2 {
+  position: relative;
+  animation-name: buttonTwo;
+  animation-duration: 4.5s;
+}
+@keyframes buttonTwo {
+  0%   {bottom:-1000px;}
+  100% {bottom:0;}
+}
+.button3 {
+  position: relative;
+  animation-name: buttonThree;
+  animation-duration: 5s;
+}
+@keyframes buttonThree {
+  0%   {top:-700px;}
+  100% {top:0;}
+}
+.button4 {
+  position: relative;
+  animation-name: buttonFour;
+  animation-duration: 5.5s;
+}
+@keyframes buttonFour {
+  0%   {right:-1000px;}
+  100% {right:0;}
+}
+nav a {
+	display: inline;
+	padding: 15px;
+    float: left;
+    color: whitesmoke;
+     
+}
+a {
+	text-decoration: none !important;
+	text-transform: uppercase;
+	text-align: center;
+}
+li {
+	list-style-type:none;
+}
+.intro-text {
+  color:whitesmoke;
+  position: relative;
+  animation-name: intro;
+  animation-duration: 6.5s;
+}
+@keyframes intro {
+  0%   {bottom:-1000px;}
+  100% {bottom:0;}
+}
+}
+img.img-icon {
+	border-radius: 50%;
+}
+.intro-text h1 {
+	
+	margin-bottom: 20px;
+	display: flex;
+	left: 50%;
+}
+.intro-text p {
+	font-size: 22px;
+}
+section {
+	top:0;
+	height:110vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.page1 {
+	display: block;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 2.5rem 2rem;
+    justify-content: space-around;
+    flex-grow: 2;
+    line-height: 2.5;
+    font-size: 20px;
+}
+.img1 {
+	border-radius: 50%;
+	filter: grayscale(90%) sepia(13%) saturate(700%);
+}
+
+.page2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background:url('img/img-26.jpg');
+    background-attachment: fixed;
+    color:white;
+    opacity: 0.8;
+}
+.page3 {
+	display: flex;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+	line-height: 2.5;
+    font-size: 20px;
+    padding: 3rem 2.5rem 2rem;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+.page4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background:url('img/img-25.jpg');
+    background-attachment: fixed;
+    color: white;
+    clip-path: polygon(14% 0, 100% 0, 0 100%, 100% 1%, 100% 100%, 9% 100%, 0 76%, 0 0);
+
+}
+footer {
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 1.5;
+}
+
