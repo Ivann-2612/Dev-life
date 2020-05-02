@@ -6,3 +6,10 @@ function bgChanger() {
 }
 }
 window.addEventListener("scroll",bgChanger);
+
+const changeColor = document.querySelector('.changeColor');
+const body = document.querySelector('body');
+
+changeColor.addEventListener('click',function () {
+	body.classList.toggle('change');
+});
