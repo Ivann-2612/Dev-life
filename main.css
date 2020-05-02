@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+
 }
 html {
 	width: 100%;
@@ -12,7 +12,7 @@ body  {
 	font-family: sans-serif;
 	transition: all 0.6s ease;
 	overflow-x: hidden;
-	color: #fdfffc;
+	color: #eff7f6;
 	font-family: Georgia, serif;
 	font-weight: 700;
 
@@ -25,19 +25,10 @@ header {
 	text-align: center;
    /*clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
   /* background:url('img-50.jpg');*/
-  background: linear-gradient (35deg,#CCFFFF,#FFCCCC,rgb(204,204,255));
-  background:url('img/img-22.jpg');
+   background:url('img/img-22.jpg');
   background-attachment: fixed;
   clip-path: polygon(100% 0, 100% 25%, 0 17%, 100% 27%, 100% 100%, 0 100%, 0 75%, 0 0);
-  position: relative;
-  animation-name: buttonbg;
-  animation-duration: 4.5s;
-
-}
-@keyframes buttonbg {
-  0%   {left:-1550px;}
-  100% {left:0;}
-}
+  
   }
 .bg-active {
 	background-color: white;
@@ -47,10 +38,13 @@ h1 {
 	font-size:50px !important;
 	color:#08BE2D;
 }
+
+/*Navigation content*/
 button {
 	width:150px;
 	background-color:#050308;
 	margin-right: 30px;
+	margin-bottom:10px;
 	border-radius: 50px;
 	text-align:center;
 	margin-bottom:10px;
@@ -61,7 +55,6 @@ button {
   position: relative;
   animation-name: buttonOne;
   animation-duration: 4s;
-
 }
 @keyframes buttonOne {
   0%   {left:-700px;}
@@ -91,7 +84,7 @@ button {
   animation-duration: 5.5s;
 }
 @keyframes buttonFour {
-  0%   {right:-1000px;}
+  0%   {right:-1400px;}
   100% {right:0;}
 }
 nav a {
@@ -102,24 +95,31 @@ nav a {
 }
 .changeColor {
 	color: white;
-	padding:10px;
+	padding:5px;
+	margin:0;
 	width:90px;
 	cursor: pointer;
+	outline:none;
+	background-color: #723D46;
 }
 .changeColor:hover {
-	color: blue;
+	color: #08BD2D;
 }
 a {
 	text-decoration: none !important;
 	text-transform: uppercase;
 	text-align: center;
+	color:white;
+}
+a:hover {
+	color:#affc41;
 }
 li {
 	list-style-type:none;
 }
 .change {
 	background-color: #723d46;
-	border:none;
+	
 }
 .intro-text {
   color:whitesmoke;
@@ -132,6 +132,7 @@ li {
   100% {bottom:0;}
 }
 }
+
 img.img-icon {
 	border-radius: 50%;
 }
@@ -163,9 +164,11 @@ section {
     line-height: 2.5;
     font-size: 20px;
 }
+
 .h11 {
-	-webkit-animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: tracking-in-expand 2.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation-delay: 6s;
+
 }
 @-webkit-keyframes tracking-in-expand {
   0% {
@@ -182,9 +185,10 @@ section {
 .img1 {
 	border-radius: 50%;
 	filter: grayscale(90%) sepia(13%) saturate(700%);
+	padding-right: 10px;
 }
 .p1 {
-	-webkit-animation: tracking-in-expand 2.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: tracking-in-expand 3.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation-delay: 10s;
 }
 @-webkit-keyframes tracking-in-expand {
@@ -228,7 +232,7 @@ section {
 	align-items: center;
 	line-height: 2.5;
     font-size: 20px;
-    padding: 3rem 2.5rem 2rem;
+    padding: 3rem 2.5rem 0.5rem;
     justify-content: space-around;
     flex-grow: 2;
 }
@@ -240,9 +244,9 @@ section {
 	background:url('img/img-25.jpg');
     background-attachment: fixed;
     color: white;
-    clip-path: polygon(14% 0, 100% 0, 0 100%, 100% 1%, 100% 100%, 9% 100%, 0 76%, 0 0);
-
-}
+    /*clip-path: polygon(14% 0, 100% 0, 0 100%, 100% 1%, 100% 100%, 9% 100%, 0 76%, 0 0);*/
+  }
+  /*Footer content*/
 footer {
 	height: 20vh;
 	display: flex;
@@ -250,6 +254,62 @@ footer {
 	align-items: center;
 	text-align: center;
 	line-height: 1.5;
+	padding-right: 20px;
+}
+.top {
+	text-transform: none;
+	padding-bottom: 10px;
+}
+#foot1{
+	width: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: none;
+	margin:0;
+
+}
+#foot {
+  padding:0;
 }
 
+/*Social network*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 50%;
+}
 
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 710px;
+  width:54px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
