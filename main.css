@@ -56,16 +56,7 @@ button {
 	margin-bottom:10px;
 	font-family: Georgia, serif; 
 }
-/*
-button:hover {
-	width:150px;
-	background-color:gray;
-	margin-right: 30px;
-	border-radius: 50px;
-	text-align:center;
-	padding:0;  
-	margin:0;
-}*/
+
 .button1 {
   position: relative;
   animation-name: buttonOne;
@@ -107,9 +98,9 @@ nav a {
 	display: inline;
 	padding: 15px;
     float: left;
-    color: whitesmoke;
-     
+    color: whitesmoke;  
 }
+
 a {
 	text-decoration: none !important;
 	text-transform: uppercase;
@@ -160,11 +151,54 @@ section {
     line-height: 2.5;
     font-size: 20px;
 }
+.h11 {
+	-webkit-animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation-delay: 6s;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .img1 {
 	border-radius: 50%;
 	filter: grayscale(90%) sepia(13%) saturate(700%);
 }
-
+.p1 {
+	-webkit-animation: tracking-in-expand 2.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation-delay: 10s;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .page2 {
 	display: flex;
 	justify-content: center;
